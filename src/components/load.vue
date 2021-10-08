@@ -1,5 +1,5 @@
 <template>
-  <div class="modal" @click="sendParent()">{{showContent}}</div>
+  <div class="modal">{{showContent}}</div>
 </template>
 
 <script>
@@ -9,14 +9,8 @@ export default {
         showContent:{
             type:String,
             default:()=>{
-                return '我是子组件'
+                return '我是load'
             }
-        }
-    },
-    methods:{
-        //给父组件传值
-        sendParent(){
-            this.$emit('getSonInfo','我是子组件的信息')
         }
     }
 }

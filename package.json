@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lib":"vue-cli-service build --target lib --name myModal ./src/components/modal.vue"
+    "lib":"vue-cli-service build --target lib --name myModal ./src/components/modal.vue",
+    "web":"vue-cli-service build --target wc --name  hantu-modal ./src/components/modal.vue"
   },
   "dependencies": {
     "core-js": "^3.6.5",

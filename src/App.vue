@@ -1,17 +1,22 @@
 <template>
   <div id="app">
-    11111111
-    <demo showContent="我是子组件1111"></demo>
+    <!-- <component :is="currentView" @changeview="changeViewFun" :pathUrl="pathUrl">
+    </component> -->
+    <hantu-modal
+      show-content="test"
+      @getSonInfo="getSonInfo($event)"
+    ></hantu-modal>
   </div>
 </template>
 <script>
-//  import modal from './components/modal.vue'
 export default {
-  components: {
-    demo: myModal,
-  },
   data() {
     return {};
+  },
+  methods: {
+    getSonInfo(val) {
+      console.log("val", val);
+    },
   },
 };
 </script>
