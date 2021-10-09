@@ -2,6 +2,7 @@
 function addScript(src) {
     const script = document.createElement("script");
     script.setAttribute("type", "text/javascript");
+    script.setAttribute("id", "script0");
     script.src = src;
     document.body.appendChild(script)
 
